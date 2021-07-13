@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flow - Real life example"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:constraint_referenced_ids="brand,discount,originalprice,retailprice,unitprice"
+        app:flow_firstHorizontalStyle="spread_inside"
+        app:flow_horizontalAlign="end"
+        app:flow_horizontalBias="1"
+        app:flow_horizontalGap="16dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_maxElementsWrap="2"
+        app:flow_verticalGap="8dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headline" />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nike Super duper air shoe"
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 30% Extra"
+        android:textAlignment="textEnd"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/originalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strike_price"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/retailprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€ 2.000,00"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/unitprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="€ 1.000 / Unit"
+        android:textAlignment="textEnd"
+        android:textSize="15sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

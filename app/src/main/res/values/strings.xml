@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Flow Example</string>
+    <string name="strike_price">UVP  <strike>€ 5.000,00</strike></string>
+</resources>
